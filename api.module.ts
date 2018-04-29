@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Configuration } from './configuration';
 
 import { AuthenticationManagementService } from './api/authenticationManagement.service';
+import { EventManagementService } from './api/eventManagement.service';
 import { UserManagementService } from './api/userManagement.service';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { UserManagementService } from './api/userManagement.service';
   exports:      [],
   providers: [
     AuthenticationManagementService,
+    EventManagementService,
     UserManagementService ]
 })
 export class ApiModule {
